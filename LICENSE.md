@@ -1,6 +1,6 @@
 For educational use only.  
-Do not reproduce without permission.  
+All rights reserved.
   
-&lt;&lt;&lt; &copy; 2026 AutoVals-CAL &gt;&gt;&gt;  
+&lt;&lt;&lt; &copy; 2026 AutoVals &gt;&gt;&gt;  
   
-Access: [www.autovals.co.uk/cal](https://autovals.co.uk/cal)
+[www.autovals.co.uk](https://autovals.co.uk/cal)

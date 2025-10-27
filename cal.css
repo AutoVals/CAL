@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.cal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 40px;
+}
+
+/* Main */
+.cal-main {
+    border: 0px solid #ddd;
+    padding: 0px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.output-section,
+.inputs-section {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Output */
+.result-card {
+    background: #e8f0f5;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4caf50;
+    border: 1px solid #ddd;
+}
+
+.reset-button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.reset-button:hover {
+    background: darkred;
+}
+
+/* Input*/
+.method-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* General Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input,
+form button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Method-Specific Themes */

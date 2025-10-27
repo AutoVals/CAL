@@ -11,13 +11,13 @@ CAL is a web-based interactive calculator for the  traditional methods of proper
 * Residual
 * Cost  
   
-The valuation method is selected using the interactive dashboard and the inputs are entered in the property pane. The outputs are then calculated and displayed on the valuation screen. 
+The valuation method is selected using the drop-down menu. The inputs are entered into the panel and the outputs are displayed on the screen. 
 
 ## Getting Started
 
 ### Access
 
-CAL webpage: [www.autovals.co.uk/cal](https://autovals.co.uk/cal)
+[CAL](https://www.autovals.co.uk/cal)
 
 ### Instructions
 <!-- to complete -->
@@ -29,7 +29,6 @@ code blocks for commands
 ```
 
 ## Help
-<!-- Add user training guide as commands -->
 
 Any advise for common problems or issues...
 ```
@@ -38,7 +37,8 @@ command to run if program contains helper info
 
 ## Feedback
 
-All comments are welcome at: [www.autovals.co.uk/feedback](https://autovals.co.uk/feedback)
+All comments are welcome at:  
+[www.autovals.co.uk/feedback](https://autovals.co.uk/feedback)
 
 ## Authors
 
@@ -54,7 +54,7 @@ Web: [www.autovals.co.uk](https://autovals.co.uk)
 
 ## Version History
 * 0.1 
-    * Current Release - Web-based calculator
+    * Current version - HTML and CSS framework
 
 ## License
 
