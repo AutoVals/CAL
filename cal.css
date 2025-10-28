@@ -2,20 +2,31 @@ body {
     font-family: Arial, sans-serif;
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 /* Header */
 .cal-header {
-    display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #ddd;
+    margin-bottom: 5px;
 }
 
 .branding {
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 1rem;
+}
+
+.branding h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.branding p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
 }
 
 .logo {
@@ -24,62 +35,100 @@ body {
 
 /* Main */
 .cal-main {
-    border: 0px solid #ddd;
-    padding: 0px;
-
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #5e5e5e;
+    box-shadow: 0 4px 8px rgb(100, 100, 100);
 }
 
 .hidden {
     display: none;
 }
 
-.output-section,
-.inputs-section {
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 1rem 0;
+/* Output */
+
+.output-display {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    border: 0px solid #ff0000;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #3b3b3b;
 }
 
-/* Output */
-.result-card {
-    background: #e8f0f5;
+.output-card {
+    height: 100%;
     padding: 1rem;
     border-radius: 4px;
     text-align: center;
-    font-size: 1.5rem;
-    color: #4caf50;
-    border: 1px solid #ddd;
-}
-
-.reset-button {
-    background: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
     font-size: 1rem;
-    margin-top: 1rem;
-    width: 100%;
-}
-
-.reset-button:hover {
-    background: darkred;
+    color: #ffffff;
 }
 
 /* Input*/
+.input-section {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    border: 0px solid #0000ff;
+}
+
 .method-selector {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
 select {
+    padding: 5px;
+    font-size: 13px;
+    background-color: #297fff56;
+    border: px solid #ddd;
+}
+
+.method-container {
     padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #5e5e5e6b;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.button-group button {
+    height: 25px;
+    padding: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid #000000;
+}
+
+#resetBtn {
+    background-color: red;
+    border-radius: 0px 0px 0px 8px;
+}
+
+#valueBtn {
+    background-color: green;
+    border-radius: 0px 0px 8px 0px;
+}
+
+/* Footer */
+.cal-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 /* General Form Styles */

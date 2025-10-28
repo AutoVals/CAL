@@ -12,57 +12,65 @@
 </head>
 
 <body>
-    <!-- Header with branding and dropdown -->
+    <!-- Branded header -->
     <header class="cal-header">
         <div class="branding">
             <a href="https://www.autovals.co.uk" target="_blank"><img src=" img/logo.png" alt="Logo" class="logo"></a>
             <h1>CAL</h1>
+            <p>A Calculator for Property Valuation</p>
             <!-- Add a user guide rollover or download button here -->
         </div>
     </header>
 
+    <!-- Calculator -->
     <main class="cal-main">
 
-        <section id="valuation-output" class="output-section">
+        <!-- Display -->
+        <section id="valuation-output" class="output-display">
             <h2 hidden>Market Value</h2>
-            <div id="result-display" class="result-card">
+
+            <!-- Output -->
+            <div id="result-display" class="output-card">
                 <!-- Output will be displayed here -->
-                <p>Display</p>
-            </div>
-            <div id="buttons">
-                <button onclick="resetCalculator()" class="reset-button">c</button>
             </div>
         </section>
 
-        <section id="valuation-input" class="inputs-section">
+        <!-- Panel -->
+        <section id="valuation-input" class="input-section">
             <h2 id="inputs-title" hidden>Valuation Panel</h2>
+
+            <!-- Drop-down method selection-->
             <div class="method-selector">
                 <label for="methodSelect" hidden>Select Method:</label>
                 <select id="methodSelect">
-                    <option value="methods" id="methodsPlaceholder">Methods...</option>
+                    <option value="methods" id="methodsPlaceholder">Select method...</option>
                     <option value="comparable">Comparable</option>
-                    <option value="income">Income</option>
+                    <option value="investment">Income</option>
                     <option value="residual">Residual</option>
                     <option value="profit">Profit</option>
                     <option value="cost">Cost</option>
                 </select>
             </div>
 
-            <!-- Placeholder: should this be moved to javascript? -->
-            <p>Select a <strong>method</strong> from the dropdown menu to begin.</p>
-            <p>Insert the valuation inputs and press value to generate the results. </p>
-            <p>Press clear to clear all inputs.</p>
-
-            <div id="inputs-container" class="method-section hidden">
+            <!-- Forms -->
+            <div id="input-container" class="method-container">
                 <!-- Inputs will be dynamically inserted here based on selected method -->
+            </div>
+
+            <!-- Buttons -->
+            <div id="buttons" class="button-group">
+                <button id="resetBtn"> </button>
+                <button id="valueBtn"> </button>
             </div>
         </section>
 
     </main>
 
+    <!-- Copyright -->
     <footer class="cal-footer">
         <p>Coypright &copy; 2026 AutoVals. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>
