@@ -6,62 +6,72 @@
     <meta name="author" content="AutoVals">
     <meta name="description"
         content="A calculator for the five traditional methods of property valuation: comparable, investment, profit, residual, and cost.">
-    <title>CAL: A Calculator for Property Valuation </title>
+    <title>CAL: Property Value Calculator </title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="cal.css" type="text/css">
 </head>
 
 <body>
-    <!-- Branded header -->
-    <header class="cal-header">
-        <div class="branding">
-            <a href="https://www.autovals.co.uk" target="_blank"><img src=" img/logo.png" alt="Logo" class="logo"></a>
-            <h1>CAL</h1>
-            <p>A Calculator for Property Valuation</p>
-            <!-- Add a user guide rollover or download button here -->
-        </div>
+    <header>
+        <!-- blank for nav bar -->
     </header>
 
-    <!-- Calculator -->
-    <main class="cal-main">
+    <main>
 
-        <!-- Display -->
-        <section id="valuation-output" class="output-display">
-            <h2 hidden>Market Value</h2>
+        <!-- CAL -->
+        <section id="cal" class="cal-container">
 
-            <!-- Output -->
-            <div id="result-display" class="output-card">
-                <!-- Output will be displayed here -->
-            </div>
-        </section>
+            <!-- Header -->
+            <section class="cal-header">
 
-        <!-- Panel -->
-        <section id="valuation-input" class="input-section">
-            <h2 id="inputs-title" hidden>Valuation Panel</h2>
+                <!-- Branding -->
+                <section class="branding">
+                    <a href="https://www.autovals.co.uk" target="_blank"><img src=" img/logo.png" alt="Logo"
+                            class="logo"></a>
+                    <h1 hidden>CAL</h1>
+                </section>
 
-            <!-- Drop-down method selection-->
-            <div class="method-selector">
-                <label for="methodSelect" hidden>Select Method:</label>
-                <select id="methodSelect">
-                    <option value="methods" id="methodsPlaceholder">Select method...</option>
-                    <option value="comparable">Comparable</option>
-                    <option value="investment">Income</option>
-                    <option value="residual">Residual</option>
-                    <option value="profit">Profit</option>
-                    <option value="cost">Cost</option>
-                </select>
-            </div>
+                <!-- Drop-down methods -->
+                <section id="method-dropdown" class="method-selector">
+                    <label for="methodSelect" hidden>Select Method:</label>
+                    <select id="methodSelect">
+                        <option value="methods" id="methodsPlaceholder">Method</option>
+                        <option value="comparable">Comparable</option>
+                        <option value="investment">Investment</option>
+                        <option value="residual">Residual</option>
+                        <option value="profit">Profit</option>
+                        <option value="cost">Cost</option>
+                    </select>
+                </section>
 
-            <!-- Forms -->
-            <div id="input-container" class="method-container">
-                <!-- Inputs will be dynamically inserted here based on selected method -->
-            </div>
+                <!-- Buttons -->
+                <section class="button-group">
+                    <button id="clear-Button" class="resetBtn"></button>
+                </section>
 
-            <!-- Buttons -->
-            <div id="buttons" class="button-group">
-                <button id="resetBtn"> </button>
-                <button id="valueBtn"> </button>
-            </div>
+            </section>
+
+            <!-- Body -->
+            <section class="cal-valuation">
+
+                <!-- User Guide and Selection  -->
+                <section id="valuation-guide" class="guide-container">
+                    <h2>Welcome to CAL</h2>
+                    <p>Select a valuation method to begin.</p>
+                </section>
+
+                <!-- Input -->
+                <section id="valuation-input" class="input-container" hidden>
+                    <!-- Input fields will be displayed here -->
+                </section>
+
+                <!-- Output -->
+                <section id="valuation-output" class="output-container" hidden>
+                    <!-- Output will be displayed here -->
+                </section>
+
+            </section>
+
         </section>
 
     </main>
@@ -70,7 +80,6 @@
     <footer class="cal-footer">
         <p>Coypright &copy; 2026 AutoVals. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>

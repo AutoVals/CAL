@@ -1,14 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 10px;
 }
 
-/* Header */
+.cal-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cal header */
 .cal-header {
-    justify-content: space-between;
     border-bottom: 2px solid #ddd;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 10px 5px 10px;
 }
 
 .branding {
@@ -16,112 +27,47 @@ body {
     align-items: center;
     width: 100%;
     gap: 1rem;
+    font-size: 0.8rem;
 }
 
-.branding h1 {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
+select {
+    padding: 5px;
+    font-size: 13px;
+    border: 0px solid #ddd;
 }
 
-.branding p {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 0.5rem 0;
+.resetBtn {
+    background: rgb(255, 0, 0);
+    background: rgba(255, 0, 0, 0.);
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
-.logo {
-    height: 40px;
-}
-
-/* Main */
-.cal-main {
-    height: 700px;
+/* Cal main */
+.cal-valuation {
     display: flex;
     flex-direction: column;
-    border: 2px solid #000000;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #5e5e5e;
-    box-shadow: 0 4px 8px rgb(100, 100, 100);
 }
 
 .hidden {
     display: none;
 }
 
-/* Output */
-
-.output-display {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    border: 0px solid #ff0000;
-    border-radius: 10px 10px 0px 0px;
-    background-color: #3b3b3b;
-}
-
-.output-card {
-    height: 100%;
-    padding: 1rem;
-    border-radius: 4px;
+.guide-container {
     text-align: center;
-    font-size: 1rem;
-    color: #ffffff;
 }
 
-/* Input*/
-.input-section {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    font-size: 14px;
-    background-color: #ffffff;
-    border-radius: 0px 0px 10px 10px;
-    border: 0px solid #0000ff;
-}
-
-.method-selector {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-select {
-    padding: 5px;
-    font-size: 13px;
-    background-color: #297fff56;
-    border: px solid #ddd;
-}
-
-.method-container {
+.input-container {
+    border: 1px solid #0044ff;
     padding: 10px;
-    flex-grow: 1;
-    overflow-y: auto;
-    background-color: #5e5e5e6b;
 }
 
-.button-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.button-group button {
-    height: 25px;
-    padding: 5px;
-    font-size: 10px;
-    cursor: pointer;
-    border-radius: 0px 0px 0px 0px;
-    border: 1px solid #000000;
-}
-
-#resetBtn {
-    background-color: red;
-    border-radius: 0px 0px 0px 8px;
-}
-
-#valueBtn {
-    background-color: green;
-    border-radius: 0px 0px 8px 0px;
+.output-container {
+    border: 1px solid #ff0000;
+    padding: 10px;
 }
 
 /* Footer */
@@ -132,31 +78,5 @@ select {
 }
 
 /* General Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-form input,
-form button {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    background: #007bff;
-    color: white;
-    cursor: pointer;
-    border: none;
-}
-
-form button:hover {
-    background: #0056b3;
-}
 
 /* Method-Specific Themes */

@@ -1,6 +1,6 @@
 # Project
 
-CAL: A Calculator for Property Valuation
+CAL: Property Value Calculator
 
 ## Description
 
