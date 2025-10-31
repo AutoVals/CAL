@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     padding: 10px;
+    color: #333333;
 }
 
 .cal-container {
@@ -9,9 +10,12 @@ body {
     border: 1px solid #ccc;
     padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
 }
 
+/*            */
 /* Cal header */
+/*            */
 .cal-header {
     border-bottom: 2px solid #ddd;
     margin-bottom: 5px;
@@ -22,6 +26,7 @@ body {
     padding: 0 10px 5px 10px;
 }
 
+/* Logo and version font */
 .branding {
     display: flex;
     align-items: center;
@@ -30,12 +35,15 @@ body {
     font-size: 0.8rem;
 }
 
-select {
+/* Dropdown Styles */
+.cal-header select {
     padding: 5px;
     font-size: 13px;
     border: 0px solid #ddd;
+    border-radius: 5px;
 }
 
+/* Reset Button */
 .resetBtn {
     background: rgb(255, 0, 0);
     background: rgba(255, 0, 0, 0.);
@@ -46,8 +54,10 @@ select {
     cursor: pointer;
 }
 
-/* Cal main */
-.cal-valuation {
+/*          */
+/* CAL Body */
+/*          */
+.cal-body {
     display: flex;
     flex-direction: column;
 }
@@ -56,10 +66,37 @@ select {
     display: none;
 }
 
+/* Guide Container */
 .guide-container {
     text-align: center;
 }
 
+/* Method Table */
+.methodTable {
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border-collapse: separate;
+    border-spacing: 0.5em;
+}
+
+.methodTable td {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 120px;
+    height: 80px;
+}
+
+.methodTable button {
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Input and Output Containers */
 .input-container {
     border: 1px solid #0044ff;
     padding: 10px;
@@ -70,11 +107,15 @@ select {
     padding: 10px;
 }
 
-/* Footer */
-.cal-footer {
+/*            */
+/* CAL Footer */
+/*            */
+.cal-copyright {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.55rem;
     color: #666;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
 }
 
 /* General Form Styles */

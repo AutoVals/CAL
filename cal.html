@@ -20,19 +20,23 @@
 
         <!-- CAL -->
         <section id="cal" class="cal-container">
-
+            <h1 hidden>CAL</h1>
             <!-- Header -->
             <section class="cal-header">
+                <h2 hidden>CAL Header</h2>
 
                 <!-- Branding -->
-                <section class="branding">
+                <section id="header-branding" class="branding">
+                    <h3 hidden>Branding</h3>
                     <a href="https://www.autovals.co.uk" target="_blank"><img src=" img/logo.png" alt="Logo"
                             class="logo"></a>
-                    <h1 hidden>CAL</h1>
+
+                    <p> v0.3 </p>
                 </section>
 
                 <!-- Drop-down methods -->
-                <section id="method-dropdown" class="method-selector">
+                <section id="header-dropdown" class="method-selector">
+                    <h3 hidden>Method Selector</h3>
                     <label for="methodSelect" hidden>Select Method:</label>
                     <select id="methodSelect">
                         <option value="methods" id="methodsPlaceholder">Method</option>
@@ -45,41 +49,75 @@
                 </section>
 
                 <!-- Buttons -->
-                <section class="button-group">
+                <section id="header-button" class="button-group">
+                    <h3 hidden>Button Group</h3>
+                    <!-- Rollover information box: press to clear, hold to reset -->
                     <button id="clear-Button" class="resetBtn"></button>
                 </section>
 
             </section>
 
             <!-- Body -->
-            <section class="cal-valuation">
+            <section class="cal-body">
+                <h2 hidden>CAL Body</h2>
 
                 <!-- User Guide and Selection  -->
                 <section id="valuation-guide" class="guide-container">
+
                     <h2>Welcome to CAL</h2>
-                    <p>Select a valuation method to begin.</p>
+                    <p>Select a valuation method to begin:</p>
+
+                    <!-- Method selection-->
+                    <section id="method-selection" class="method-container">
+                        <h3 hidden>Method Selection</h3>
+
+                        <table id="method-table" class="methodTable">
+                            <tr>
+                                <td><button>Comparable</button></td>
+                            </tr>
+                            <tr>
+                                <td><button>Investment</button></td>
+                            </tr>
+                            <tr>
+                                <td><button>Residual</button></td>
+                            </tr>
+                            <tr>
+                                <td><button>Profit</button></td>
+                            </tr>
+                            <tr>
+                                <td><button>Cost</button></td>
+                            </tr>
+                        </table>
+
+                    </section>
+
                 </section>
 
                 <!-- Input -->
                 <section id="valuation-input" class="input-container" hidden>
+                    <h2>Input</h2>
                     <!-- Input fields will be displayed here -->
                 </section>
 
                 <!-- Output -->
                 <section id="valuation-output" class="output-container" hidden>
+                    <h2>Output</h2>
                     <!-- Output will be displayed here -->
                 </section>
 
+            </section>
+
+            <!-- Copyright -->
+            <section class="cal-copyright">
+                <h2 hidden>CAL Copyright</h2>
+                <p>&copy; 2026 AutoVals. All rights reserved.</p>
             </section>
 
         </section>
 
     </main>
 
-    <!-- Copyright -->
-    <footer class="cal-footer">
-        <p>Coypright &copy; 2026 AutoVals. All rights reserved.</p>
-    </footer>
+
 </body>
 
 </html>
